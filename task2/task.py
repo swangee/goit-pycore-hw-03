@@ -19,7 +19,3 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
         return []
 
     return random.sample(range(min, max), quantity)
-
-
-lottery_numbers = get_numbers_ticket(1, 49, 6)
-print("Ваші лотерейні числа:", lottery_numbers)

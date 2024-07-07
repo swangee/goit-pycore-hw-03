@@ -41,14 +41,3 @@ def calc_upcoming_birthday_date(today: datetime.date, birthday: str) -> datetime
         congrats_date = congrats_date.replace(year=today.year+1)
 
     return congrats_date
-
-users = [
-    {"name": "John Doe 0", "birthday": "1985.07.06"},
-    {"name": "John Doe", "birthday": "1985.07.07"},
-    {"name": "John Doe 1", "birthday": "1985.07.08"},
-    {"name": "John Doe 2", "birthday": "1985.07.12"},
-    {"name": "John Doe 3", "birthday": "1985.07.13"},
-]
-
-upcoming_birthdays = get_upcoming_birthdays(users)
-print("Список привітань на цьому тижні:", upcoming_birthdays)
